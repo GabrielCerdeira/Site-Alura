@@ -1,0 +1,787 @@
+	<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+	<title>Alura Empresas</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" sizes="192x192" href="icon.png">
+	<meta name="theme-color" content="#2C3E50">
+	<meta name="description" content="Alura Empresas: Retenha seus talentos fornecendo acesso a melhor plataforma de ensino de Tecnologia do Brasil, a Alura. Super desconto nos cursos e treinamentos de TI da Alura." />
+	<meta name="keywords" content="Alura Empresa, Desconto Alura, Desconto Alura Empresa" />
+	<meta property="og:site_name" content="NerdIn">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:title" content="Alura Empresas">
+	<meta property="og:description" content="Alura Empresas: Retenha seus talentos fornecendo acesso a melhor plataforma de ensino de Tecnologia do Brasil, a Alura. Super desconto nos cursos e treinamentos de TI da Alura.">
+	<meta property="og:url" content="https://nerdin.com.br/alura_empresa">
+	<meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.nerdin.com.br/img/nerdin_vagas_de_ti.png">
+    <meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="852">
+	<meta property="og:image:height" content="480">	
+		
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128634108-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-128634108-1');
+	</script>
+	
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-8199900912397682",
+		enable_page_level_ads: true
+	  });
+	</script>	
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '241743250051764'); 
+		fbq('track', 'PageView');
+		  fbq('track', 'Empresa');
+	</script>
+	<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=241743250051764&ev=PageView
+		&noscript=1"/>
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+	
+	
+    <script type="application/ld+json">
+        {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+		"url" : "http://www.nerdin.com.br",
+        "name" : "NerdIn vagas de TI"
+        }
+    </script>	
+	
+	
+	<script>
+		function search(ele) {
+			if(event.key === 'Enter') {
+				document.getElementById('btnContinuar').click();      
+			}
+		}
+	</script>
+	
+   <SCRIPT language=Javascript>
+      <!--
+      function isNumberKey(evt)
+      {
+         var charCode = (evt.which) ? evt.which : event.keyCode
+         if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+         return true;
+      }
+      //-->
+   </SCRIPT>	
+	
+	<script>
+		
+		function null_or_empty(str) {
+			var v = document.getElementById(str).value;
+			return v == null || v.trim() == '';
+		}
+
+		function testess(params)
+		{
+			if (!(null_or_empty(params)))
+			{
+				document.getElementById('div'+params).innerHTML  = '';
+				document.getElementById('divMsgCadastro').innerHTML  = '';
+	
+			}
+		}		
+		
+		function valida_form(params) {
+			i2=0;
+			
+			for (i=0; i<params.length; i++) {
+				
+				if (null_or_empty(params[i]))
+				{
+					document.getElementById('div'+params[i]).innerHTML  = 'Falta informar: '+document.getElementById('lbl'+params[i]).innerHTML;
+					
+					if (i2==0)
+					{
+						i2 = 1;
+						document.getElementById(params[i]).focus();
+					}				
+				}
+				else
+				{
+					document.getElementById('div'+params[i]).innerHTML  = '';						
+				}
+			}			
+		
+			
+			if (i2 > 0)
+			{
+				return false;
+			}
+			
+			document.getElementById("btnSolicitar").disabled = true;
+			
+			return true;
+		}	  
+	</script>	
+	
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  display: inline-block;
+  width: 33%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #2C3E50;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 5px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>	
+
+	<link href="css/nerdin.css" rel="stylesheet">
+	<style>
+#img1 {display:block;}
+#img2 {display:none}
+
+@media all and (max-width: 499px) {
+    #img1 {display: none;}
+    #img2 {display: block;}
+}
+	</style>
+  </head>
+
+  <body id="page-top">
+
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+		<table align="center">
+			<tr align="center">
+				<td align="center">	  
+					<a class="" href="index"><span style="color:#ffffff; font-size:20px;">Nerd</span><span style="color:#ff7043; font-size:20px;">In</span></a>
+				</td>
+			</tr>
+			<!--<tr align="center">
+				<td align="center">
+					<span style="color:#FFFFFF; font-size:12px;">vagas de ti</span>
+				</td>
+			</tr>-->
+		</table>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">		
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="vagas" style="background-color:#2C3E50; border-color:#2C3E50">Vagas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="cursos_de_ti" style="color:#FFF339; background-color:#2C3E50; border-color:#2C3E50">&nbsp;Cursos</a>
+            </li>
+			
+			<div class="dropdown show">
+				<li class="nav-item">
+				  
+				  <a class="btn-secondary dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#2C3E50; border-color:#2C3E50">
+					Candidato
+				  </a>		
+			
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="login"><img src="img/menu_icone_candidato_login.png" style="width:18px;height:18px;" alt="Ícone menu candidato" alt="Ícone login candidato">&nbsp;Login</a>
+					<a class="dropdown-item" href="cadastrar_candidato_ti"><img src="img/menu_icone_candidato_meu_cadastro.png" style="width:18px;height:18px;" alt="Ícone menu candidato meu cadastro">&nbsp;Cadastre-se</a>
+					<a class="dropdown-item" href="vagas"><img src="img/menu_icone_empresa_minhas_vagas.png" style="width:18px;height:18px;" alt="Ícone minhas vagas" alt="Ícone minhas vagas">&nbsp;Vagas</a>
+					<!-- <a class="dropdown-item" href="concursos_de_ti"><img src="img/menu_icone_candidato_concurso.png" style="width:18px;height:18px;" alt="Ícone menu concurso de TI">&nbsp;Concursos</a> -->
+					<a class="dropdown-item" href="cursos_de_ti"><img src="img/menu_icone_conteudo_privacidade.png" style="width:18px;height:18px;" alt="Ícone crusos de ti" alt="Ícone minhas vagas">&nbsp;<b>Cursos</b></a>
+					
+					<a class="dropdown-item" href="testes"><img src="img/menu_icone_candidato_testes.png" style="width:18px;height:18px;" alt="Ícone menu candidato testes">&nbsp;Testes de TI</a>
+					<a class="dropdown-item" href="testes_resultado"><img src="img/menu_icone_candidato_resultados_certificados.png" style="width:18px;height:18px;" alt="Ícone menu resultado certificados">&nbsp;Resultados & Certificados</a>
+					<a class="dropdown-item" href="nerd"><img src="img/menu_icone_candidato_nerd.png" style="width:18px;height:18px;" alt="Ícone menu candidato nerd">&nbsp;Nerd</a>
+					<a class="dropdown-item" href="sorteios"><img src="img/menu_icone_candidato_sorteios.png" style="width:18px;height:18px;" alt="Ícone menu candidato sorteios">&nbsp;Sorteios e Prêmios</a>
+					<a class="dropdown-item" href="promocoes"><img src="img/menu_icone_conteudo_sistema.png" style="width:18px;height:18px;" alt="Ícone minhas vagas" alt="Ícone minhas vagas">&nbsp;Promoções</a>
+					<a class="dropdown-item" href="mensagem_candidato"><img src="img/menu_icone_empresa_mensagem.png" style="width:18px;height:18px;" alt="Ícone menu empresa mensagem">&nbsp;Mensagens</a>
+					<a class="dropdown-item" href="teste_atencao_concentrada"><img src="img/menu_icone_candidato_teste_atencao_concentrada.png" style="width:18px;height:18px;" alt="Ícone menu candidato testes atenção concentrada">&nbsp;Teste de Atenção</a>
+					<a class="dropdown-item" href="teste_comportamental"><img src="img/menu_icone_candidato_teste_comportamental_new.png" style="width:18px;height:18px;" alt="Ícone menu candidato teste comportamental">&nbsp;Teste Comportamental</a>
+					<a class="dropdown-item" href="cargo_salario"><img src="img/menu_icone_cargos_salarios.png" style="width:18px;height:18px;" alt="Ícone menu Cargos e Salários de TI">&nbsp;Cargos e Salários</a>
+					<a class="dropdown-item" href="depoimentos"><img src="img/menu_icone_candidato_depoimento.png" style="width:18px;height:18px;" alt="Ícone menu candidato depoimentos">&nbsp;Depoimentos</a>	
+					<a class="dropdown-item" href="empresas"><img src="img/menu_conteudo_empresas.png" style="width:18px;height:18px;" alt="Ícone menu empresa conteúdos">&nbsp;Empresas</a>					
+				  </div>
+				</li>  
+			</div>			
+			
+			
+			<div class="dropdown show">
+				<li class="nav-item">
+				 
+				  <a class="btn-secondary dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #9cb3c9;">
+					Empresa
+				  </a>		
+			
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item" href="login_empresa"><img src="img/menu_icone_empresa_login.png" style="width:18px;height:18px;" alt="Ícone menu empresa login">&nbsp;Login</a>				  
+				  <a class="dropdown-item" href="cadastrar_empresa"><img src="img/menu_icone_empresa_meu_cadastro.png" style="width:18px;height:18px;" alt="Ícone menu empresa meu cadastro">&nbsp;Cadastre-se</a>				  
+				  <a class="dropdown-item" href="cadastro_vaga"><img src="img/menu_icone_empresa_cadastrar_vaga.png" style="width:18px;height:18px;" alt="Ícone menu empresa incluir vaga">&nbsp;Incluir Vaga</a>
+				  
+				  <a class="dropdown-item" href="candidatos"><img src="img/menu_icone_empresa_curriculos.png" style="width:18px;height:18px;" alt="Ícone menu empresa currículos de TI">&nbsp;Candidatos</a>
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  <a class="dropdown-item" href="plano_empresa"><img src="img/menu_icone_empresa_produtos_planos.png" style="width:18px;height:18px;" alt="Ícone menu empresa produtos e planos">&nbsp;Produtos e Planos</a>
+				  
+				  <a class="dropdown-item" href="hunting"><img src="img/menu_icone_empresa_hunting.png" style="width:18px;height:18px;" alt="Ícone menu empresa hunting de TI">&nbsp;Hunting</a>
+				  <a class="dropdown-item" href="alura_empresa"><b><img src="img/alura_a_circulo.png" style="width:18px;height:18px;" alt="Ícone menu Alura Empresa">&nbsp;Alura Empresa</b></a>
+				  <a class="dropdown-item" href="help"><img src="img/menu_icone_empresa_ajuda.png" style="width:18px;height:18px;" alt="Ícone menu ajuda Nerdin">&nbsp;Ajuda</a>
+				  </div>
+				</li>  
+			</div>		
+			
+
+			
+			<div class="dropdown show">
+				<li class="nav-item"> 				
+				  
+				  <a class="btn-secondary dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#2C3E50; border-color:#2C3E50">
+					Conte&uacute;do
+				  </a>		
+			
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				  <a class="dropdown-item" href="empresas"><img src="img/menu_conteudo_empresas.png" style="width:18px;height:18px;" alt="Ícone menu empresa conteúdo">&nbsp;Empresas</a>
+				  <a class="dropdown-item" href="concursos_de_ti"><img src="img/menu_icone_candidato_concurso.png" style="width:18px;height:18px;" alt="Ícone menu concurso de TI">&nbsp;Concursos</a>
+				  <a class="dropdown-item" href="graficos"><img src="img/menu_icone_conteudo_grafico.png" style="width:18px;height:18px;" alt="Ícone menu empresa gráficos">&nbsp;Gr&aacute;ficos</a>
+				  <a class="dropdown-item" href="blog"><img src="img/menu_icone_conteudo_blog.png" style="width:18px;height:18px;" alt="Ícone menu blog de TI">&nbsp;Blog</a>
+				  <a class="dropdown-item" href="sistema"><img src="img/menu_icone_conteudo_sistema.png" style="width:18px;height:18px;" alt="Ícone menu O sistema Nerdin">&nbsp;O Sistema</a>
+				  <a class="dropdown-item" href="cargo_salario"><img src="img/menu_icone_cargos_salarios.png" style="width:18px;height:18px;" alt="Ícone menu cargos e salários de TI">&nbsp;Cargos e Salários</a>
+				  <a class="dropdown-item" href="hunting"><img src="img/menu_icone_empresa_hunting.png" style="width:18px;height:18px;" alt="Ícone menu empresa hunting de TI">&nbsp;Hunting</a>
+				  <a class="dropdown-item" href="alura_empresa"><b><img src="img/alura_a_circulo.png" style="width:18px;height:18px;" alt="Ícone menu Alura Empresa">&nbsp;Alura Empresa</b></a>
+				  <a class="dropdown-item" href="politica_privacidade"><img src="img/menu_icone_conteudo_privacidade.png" style="width:18px;height:18px;" alt="Ícone menu privacidade Nerdin">&nbsp;Privacidade</a>
+				  <a class="dropdown-item" href="contato"><img src="img/menu_icone_conteudo_sobre_nos.png" style="width:18px;height:18px;" alt="Ícone menu contato Nerdin">&nbsp;Sobre N&oacute;s</a>
+				  <a class="dropdown-item" href="contato_nerdin"><img src="img/menu_icone_conteudo_contato_nerdin.png" style="width:18px;height:18px;" alt="Ícone menu contatos Nerdin">&nbsp;Fale Conosco</a>
+				  <a class="dropdown-item" href="help"><img src="img/menu_icone_empresa_ajuda.png" style="width:18px;height:18px;" alt="Ícone menu Ajuda empresas">&nbsp;Ajuda</a>				  
+				  </div>
+				</li>  
+			</div>
+			<li class="nav-item">
+			<a class="nav-link js-scroll-trigger" href="plano_empresa" style="background-color:#2C3E50; border-color:#2C3E50">Planos</a>
+			</li>
+			<!--  -->
+			<li class="nav-item">
+			<a class="nav-link js-scroll-trigger" href="index" style="background-color:#2C3E50; border-color:#2C3E50">Home</a>
+			</li>
+          </ul>
+        </div>
+		<div name="divLogin">
+			&nbsp;<a style="font-size:12px; color:#ff7043" href="login_menu"><b>LOGIN</b></a>
+		</div>	
+      </div>
+	  <br>
+	  <br>
+
+    </nav>	
+			
+    <!-- Header -->
+    <header class="masthead" style="font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;">
+		
+	  
+      <div class="container" style="font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;">
+
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+
+      <div class="container" style="font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;color:#2C3E50;">
+	  
+		<div id="divMsgCadastro" align="center" style="color:green; font-size:20px">
+					</div>	  
+		<br/>
+		<div align="center">
+			<img src='img/alura_a_circulo.png' height='70' width='70' alt='Ícone logomarca Alura pequeno'>
+		</div>
+        <h2 class="text-center" style="font-size:25px">Alura Empresas</h2>
+		  <div align="center">
+				<span>
+					Quer aumentar a retenção de seus funcionários e ainda atrair novos talentos para seu time? 
+					<br/>
+					Forneça aos seus funcionários acesso a melhor plataforma de ensino de Tecnologia do Brasil, a Alura.
+					<br/>
+					<br/>
+					<br/>
+				</span>
+		  </div>
+
+	<div align="center">
+	<div class="columns">
+	  <ul class="price">
+		<li class="header" style="background-color:#04AA6D; padding: 20px;">Plano Corp</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;15% de Desconto</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Degustação</li>		
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;+1.270 Cursos</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;+5.000 Aulas</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Lançamentos Semanais</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Plano de Estudo Empresa</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Plano de Estudo Time</li>
+		<li style='color:#C0C0C0;'><img src='img/plano_nao_tem.png' height='16' width='16' alt='Ícone pequeno plano uncheck'>&nbsp;&nbsp;Plano de Estudo Individual</li>
+		<li><img src='img/plano_nao_tem.png' height='16' width='16'>&nbsp;&nbsp;Análise de Engajamento</li>
+		<li><img src='img/plano_nao_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;App Mobile On/Off line</li>
+		<li style='color:#C0C0C0;'><img src='img/plano_nao_tem.png' height='16' width='16' alt='Ícone pequeno plano uncheck'>&nbsp;&nbsp;Gestão de Conta Dedicada</li>
+		<li style='color:#C0C0C0;'><img src='img/plano_nao_tem.png' height='16' width='16' alt='Ícone pequeno plano uncheck'>&nbsp;&nbsp;Acesso à API</li>
+		<li class="grey" style="padding: 20px;"><a href="#" class="button" onclick="javascript:TipoPlanoEmpresa(1)"><b>Começar</b></a></li>
+	  </ul>
+	</div>
+
+	<div class="columns">
+	  <ul class="price">
+		<li class="header" style="padding: 20px;">Plano Corp Plus</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;15% de Desconto</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Degustação</li>		
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;+1.270 Cursos</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;+5.000 Aulas</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Lançamentos Semanais</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Plano de Estudo Empresa</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Plano de Estudo Time</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Plano de Estudo Individual</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Análise de Engajamento</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;App Mobile On/Off line</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Gestão de Conta Dedicada</li>
+		<li><img src='img/plano_tem.png' height='16' width='16' alt='Ícone check plano pequeno'>&nbsp;&nbsp;Acesso à API</li>
+		<li class="grey" style="padding: 20px;"><a href="#" class="button" onclick="javascript:TipoPlanoEmpresa(2)"><b>Começar</b></a></li>
+	  </ul>
+	</div>
+	
+	<br/>
+	<br/>
+
+
+<div align="center">
+	<a style="color:#9cb3c9;" href="https://api.whatsapp.com/send?phone=55041997907527" target="_blank"><b>(41) 997907527 </b>&nbsp;<img class="img-fluid" src="img/whatsapp_new.png" height="30" width="30" alt=""></a>
+</div>
+<hr></hr>
+<br/>
+<div align="center">
+	<img src='img/alura_nerdin_linkedin.png' style="width:100%;height:100%;" >
+</div>	
+<br/>
+<br/>	
+	</div>
+	</div>
+
+
+    <!-- Footer -->
+	
+	<div style="font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;">
+    <footer class="text-center">
+      <div class="footer-above">
+					
+		<div align="center">	
+			<!-- <a href = "login">
+				<img id="img1" src="img/nerdin_sorteio_natal_2022_grande.png" style="max-width: 100%; max-height: 100%;" alt="Sorteio Dia dos Namorados Nerdin grande">
+				<img id="img2" src="img/nerdin_sorteio_natal_2022_pequeno.png" style="max-width: 100%; max-height: 100%;" alt="Sorteio Dia dos Namorados Nerdin pequeno">
+			</a> -->
+			<!--<br/>
+			<a href = "promocoes">
+				<img id="img1" src="img/promocoes_nerdin_grande.png" style="max-width: 100%; max-height: 100%;" alt="Sorteio Promoções Nerdin grande">
+				<img id="img2" src="img/promocoes_nerdin_pequeno.png" style="max-width: 100%; max-height: 100%;" alt="Sorteio Promoções Nerdin pequeno">
+			</a>-->
+
+			<br/>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Cabecalho Longo -->
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-8199900912397682"
+				 data-ad-slot="3126151631"
+				 data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			<br/>
+			<a href = "cursos_de_ti" target="_blank">
+				<img id="img1" src="img/cursos_de_ti_nerdin_grande_3.png" alt="Sorteio Promoções Nerdin grande">
+				<img id="img2" src="img/cursos_de_ti_nerdin_pequeno_3.png" alt="Sorteio Promoções Nerdin pequeno">
+			</a>
+			<!--<br/>
+			<a href = "https://www.alura.com.br/promocao/Nerdinx" target="_blank">
+				<img id="img1" src="img/alura_10_grande_novo3.png" alt="Sorteio Promoções Nerdin grande">
+				<img id="img2" src="img/alura_10_pequeno_novo3.png" alt="Sorteio Promoções Nerdin pequeno">
+			</a> -->
+		</div>
+<br/>
+	<table align="center">
+		<tr align="center">
+			<td>
+				<img src="img/coffee.png" height="50" width="50" alt="Ícone café">
+			</td>
+			<td>
+			&nbsp;&nbsp;&nbsp;
+			</td>
+			<td>
+				<a href="contato#AjudeComNossoCafe"><span style="color:#ff7043"><b>Ajude com nosso café </a><br/> PIX: 40460604000135</b>
+			</td>
+		</tr>
+	</table>
+<br/>
+					
+	<br/>
+		<div class="container" align="center">
+			<table >
+				<tr style="font-size:14px;">
+					<td align="left" >
+						<b>CANDIDATO</b>
+						<hr></hr>
+						<a style="color:#9cb3c9;" href="vagas">Vagas</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="login">Login</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="cadastrar_candidato_ti">Cadastro</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="testes">Testes de TI</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="sorteios">Sorteios e Prêmios</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="cargo_salario">Cargos e Salários</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="empresas">Lista de Empresas</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="teste_comportamental">Teste Comportamental</a>
+						<br/>
+						&nbsp;	
+						<br/>							
+					</td>
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						&nbsp;
+					</td>					
+					<td align="left">
+						<b>EMPRESAS</b>
+						<hr></hr>
+						<a style="color:#9cb3c9;" href="login_empresa">Login</a>
+						<br/>						
+						<a style="color:#9cb3c9;" href="cadastrar_empresa">Cadastro</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="cadastro_vaga">Incluir Vaga</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="candidatos">Candidatos</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="agendas">Agendas</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="cadastrar_tag">Tag</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="sistema">O Sistema</a>
+						<br/>						
+						<a style="color:#9cb3c9;" href="plano_empresa">Produtos e Planos</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="help">Ajuda</a>
+						<br/>						
+					</td>	
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						&nbsp;
+					</td>					
+					<td align="left">
+						<b>CONTEÚDO</b>
+						<hr></hr>
+						<a style="color:#9cb3c9;" href="empresas">Empresas</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="graficos">Gráficos</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="blog">Blog</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="cargo_salario">Cargos e Salários</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="politica_privacidade">Política de Privacidade</a>						
+						<br/>
+						<a style="color:#9cb3c9;" href="contato">Sobre Nós</a>
+						<br/>						
+						<a style="color:#9cb3c9;" href="contato_nerdin">Fale Conosco</a>
+						<br/>
+						<a style="color:#9cb3c9;" href="ajuda_empresa">Ajuda</a>
+						<br/>
+						&nbsp;	
+						<br/>							
+					</td>					
+				</td>
+			</table>		
+		</div>
+		<br/>
+	    <div class="container" style="font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;">
+
+          <div class="row">		  
+            <div class="footer-col col-md-4">
+              <h3>&nbsp;</h3>
+              <p>&nbsp;
+                <br/></p>
+            </div>
+            <div class="footer-col col-md-4">
+              <p>Curitiba-PR
+                <br>Brasil</p>
+				<a href="https://www.youtube.com/channel/UCM4Dt9l_HtMnI-dcrwvgi2A" target="_blank"> <img class="img-fluid" src="img/youtube.png" height="36" width="36" alt="Ícone Youtube pequeno"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.linkedin.com/company/nerdin" target="_blank"> <img class="img-fluid" src="img/linkedin_new.png" height="36" width="36" alt="Ícone Linkedin pequeno"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.instagram.com/nerdin_vagas_de_ti/" target="_blank"> <img class="img-fluid" src="img/instagram_new.png" height="36" width="36" alt="Ícone Instagram pequeno"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.facebook.com/NerdInBr/" target="_blank"> <img class="img-fluid" src="img/facebook_new.png" height="36" width="36" alt="Ícone Facebook pequeno"></a><br/>
+				<br/>
+			  <b>contato@nerdin.com.br</b><br/>
+			  <br/>
+			  <a style="color:#9cb3c9;" href="https://api.whatsapp.com/send?phone=55041997907527" target="_blank"><b>(41) 997907527 </b>&nbsp;<img class="img-fluid" src="img/whatsapp_new.png" height="25" width="25" alt="Ícone Whats App pequeno"></a><br/>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>&nbsp;</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container" style="font-family: Segoe UI,SegoeUI,Helvetica Neue,Helvetica,Arial,sans-serif;">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; Website
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>		
+	</div>
+		
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top d-lg-none">
+      <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+	
+	
+			  <div class='modal fade' id='myModal1' role='dialog'>
+				<div class='modal-dialog modal-lg'>
+				  <div class='modal-content'>
+					<div class='modal-header'>
+					  <button type='button' class='close' data-dismiss='modal'>&times;</button>
+					</div>
+					<div class='modal-body' style='font-size:18px;color:#2C3E50;'>
+						<div class="row">
+						  <div class="col-lg-8 mx-auto">
+							<form name="sentMessage" id="formFEmpresa_Contato" method="post" action="func/FContatoNerdinCadastrar.php" onsubmit="return valida_form(['NomeEmpresa','NomeContato','Email','NumeroTelefone','Mensagem'])" >
+							 
+							  <div class="control-group" style="display:none">
+								<div class="form-group floating-label controls">						
+									<span class="titulo" id="lblTipoContato" name="lblTipoContato">Tipo de Contato</span>
+									<select id="TipoContato" name="TipoContato" title="Selecione o tipo de contato">	
+										<option value="Candidato">Candidato</option>
+										<option value="Empresa" selected="selected">Empresa</option>
+										<option value="Hunting">Outro</option>
+									</select>
+									<div name="divTipoContato" id="divTipoContato" class="help-block text-danger" align="left"></div>								
+								</div>					
+							  </div>
+							  
+							  <div class="control-group" style="display:none">
+								<div class="form-group controls">			
+									<span class="titulo" id="lblNumeroDocumento" name="lblNumeroDocumento">CPF/CNPJ*</span>
+									<input type="text" id="NumeroDocumento" name="NumeroDocumento" onkeypress="return isNumberKey(event)" maxlength="20" value="">
+									<div name="divNumeroDocumento" id="divNumeroDocumento" class="help-block text-danger" align="left"></div>
+								</div>
+							  </div>
+							  
+							  <div class="control-group">
+								<div class="form-group controls">					
+									<span class="titulo" id="lblNomeEmpresa" name="lblNomeEmpresa">Empresa*</span>
+									<input onchange="return testess('NomeEmpresa')" oninput="return testess('NomeEmpresa')" type="text" maxlength="100" id="NomeEmpresa" name="NomeEmpresa" placeholder="">			
+									<div name="divNomeEmpresa" id="divNomeEmpresa" class="help-block text-danger" align="left"></div>	
+								</div>
+							  </div>		
+
+							  <div class="control-group">
+								<div class="form-group controls">					
+									<span class="titulo" id="lblNomeContato" name="lblNomeContato">Nome Contato*</span>
+									<input onchange="return testess('NomeContato')" oninput="return testess('NomeContato')" type="text" maxlength="100" id="NomeContato" name="NomeContato" placeholder="">			
+									<div name="divNomeContato" id="divNomeContato" class="help-block text-danger" align="left"></div>	
+								</div>
+							  </div>		
+
+
+							  <div class="control-group">
+								<div class="form-group controls">					
+									<span class="titulo" id="lblEmail" name="lblEmail">E-mail*</span>
+									<input onchange="return testess('Email')" oninput="return testess('Email')" type="text" id="Email" name="Email" placeholder="" >			
+									<div name="divEmail" id="divEmail" class="help-block text-danger" align="left"></div>	
+								</div>
+							  </div>					  
+							  
+							  <div class="control-group">
+								<div class="form-group controls">			
+									<span class="titulo" id="lblNumeroTelefone" name="lblNumeroTelefone">Fone*</span>
+									<input type="text" id="NumeroTelefone" name="NumeroTelefone" onkeypress="return isNumberKey(event)" maxlength="20" value="" placeholder="">		
+									<div name="divNumeroTelefone" id="divNumeroTelefone" class="help-block text-danger" align="left"></div>
+								</div>
+							  </div>	
+							  
+							  
+							  <div class="control-group">
+								<div class="form-group controls">						
+									<span class="titulo" id="lblMensagem" name="lblMensagem">Mensagem*</span>
+									<textarea onchange="return testess('Mensagem')" oninput="return testess('Mensagem')" rows="4" id="Mensagem" name="Mensagem" placeholder=""></textarea>	
+									<div name="divMensagem" id="divMensagem" class="help-block text-danger" align="left"></div>
+								</div>
+							  </div>					  
+							  
+							  
+							<br>
+							<button id="btnSolicitar" type="submit" class="btn btn-success btn-lg" style="background-color:#2C3E50; cursor:pointer;">ENVIAR</button>				  
+							  
+							</form>
+						  </div>
+						</div>
+					</div>
+					<div class='modal-footer'>
+					  <button type='button' class='btn btn-default' data-dismiss='modal'>Fechar</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+	
+	<script>
+		function btnValidarEmail() {
+			
+			var strValue = document.getElementById("cSenha").value;
+			document.getElementById("divEmail").innerHTML = "";
+			document.getElementById("divSenha").innerHTML = "";
+			
+			if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("cEmail").value)))
+			{
+				document.getElementById("divEmail").innerHTML = "E-mail inv&aacute;lido!";
+				document.getElementById("cEmail").focus();
+				return false;					
+			}
+			else if (strValue.trim() === "")
+			{
+				document.getElementById("divSenha").innerHTML = "Informe uma senha!";	
+				document.getElementById("cSenha").focus();				
+				return false;					
+			}
+			else if (strValue.length <= 5)
+			{
+				document.getElementById("divSenha").innerHTML = "A senha deve ter ao menos 6 caracteres.";	
+				document.getElementById("cSenha").focus();				
+				return false;								
+			}
+			else
+			{
+				document.getElementById("divAguarde").innerHTML = "Aguarde um instante...";	
+				return true;
+			}
+			
+			
+				
+		}
+		
+		function TipoPlanoEmpresa(Tipo)
+		{
+			if (Tipo==1)
+				document.getElementById("Mensagem").value = "NerdIn, gostaria de saber mais sobre o Plano Corp do Alura Empresas. Por favor, me enviar os próximos passos.";
+				
+			if (Tipo==2)
+				document.getElementById("Mensagem").value = "NerdIn, gostaria de saber mais sobre o Plano Corp Plus do Alura Empresas. Por favor, me enviar os próximos passos.";
+			
+			$("#myModal1").modal();
+		}
+	</script>			
+
+  </body>
+
+</html>
